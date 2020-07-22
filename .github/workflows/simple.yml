@@ -4,12 +4,12 @@ on: [push]
 
 jobs:
   run-shell-command:
-  runs-on: ubuntu-latest
-  steps:
-    - name: echo a string
-      run: echo "Hello Git World"
-    - name:
-      run: |
-        node -v
-        npm -v
-        hostname
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello Git World"
+      - name: multi-line script
+        run: |
+          node -v
+          npm -v
+          hostname
